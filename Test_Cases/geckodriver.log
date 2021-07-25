@@ -1,0 +1,19 @@
+1627027044103	geckodriver	INFO	Listening on 127.0.0.1:59861
+1627027047347	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\SKYNET~1\\AppData\\Local\\Temp\\rust_mozprofileoFcK20"
+1627027052170	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SKYNETT DRONES\\AppData\\Local\\Temp\\rust_mozprofileoFcK20\\search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 770))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1627027072933	Marionette	INFO	Listening on port 59869
+1627027074281	Marionette	WARN	TLS certificate errors will be ignored for this session
+1627027131545	Marionette	INFO	Stopped listening on port 59869
+1627027133943	geckodriver	INFO	Listening on 127.0.0.1:54573
+1627027136992	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\SKYNET~1\\AppData\\Local\\Temp\\rust_mozprofilePkFtBP"
+1627027138069	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SKYNETT DRONES\\AppData\\Local\\Temp\\rust_mozprofilePkFtBP\\search.json.mozlz4", (void 0)))
+1627027145421	Marionette	INFO	Listening on port 54581
+1627027146459	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+1627027200401	Marionette	INFO	Stopped listening on port 54581
