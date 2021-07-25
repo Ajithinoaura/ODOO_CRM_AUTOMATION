@@ -9,7 +9,7 @@ from Page_Objects.loginPage import Login
 from Page_Objects.create_newAccount import NewAccountPage
 from Utilities.readProperties import ReadConfig
 from Utilities.customLogger import LogGen
-from Utilities import xl_utilities
+from Utilities import XLUtils
 
 
 class Test_003_NewAccountCreation:
@@ -25,13 +25,13 @@ class Test_003_NewAccountCreation:
         self.driver.maximize_window()
         self.lp = Login(self.driver)
 
-        self.rows = xl_utilities.getRowCount(self.path, 'Sheet1')
+        self.rows = XLUtils.getRowCount(self.path, 'Sheet1')
         print("No of rows in excel", self.rows)
 
         for r in range(2, self.rows + 1):
-            self.user = xl_utilities.readData(self.path, 'Sheet1', r, 1)
-            self.password = xl_utilities.readData(self.path, 'Sheet1', r, 2)
-            self.exp = xl_utilities.readData(self.path, 'Sheet1', r, 3)
+            self.user = XLUtils.readData(self.path, 'Sheet1', r, 1)
+            self.password = XLUtils.readData(self.path, 'Sheet1', r, 2)
+            self.exp = XLUtils.readData(self.path, 'Sheet1', r, 3)
 
             self.lp.enter_username(self.user)
             self.lp.enter_password(self.password)
