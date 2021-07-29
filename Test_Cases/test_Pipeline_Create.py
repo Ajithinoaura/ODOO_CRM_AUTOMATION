@@ -4,7 +4,7 @@
 # from selenium.webdriver.support.ui import WebDriverWait
 # from selenium.webdriver.support import expected_conditions as EC
 import time
-import pytest
+# import pytest
 from Page_Objects.loginPage import Login
 from Page_Objects.pipeline_Creation import crm_PipelineCreation
 from Utilities.readProperties import ReadConfig
@@ -45,7 +45,7 @@ class Test_004_login:
     #         assert False
     #
     # time.sleep(2)
-    @pytest.mark.regression
+    # @pytest.mark.regression
     def test_Create_Pipeline(self, setup):
         self.driver = setup
         self.logger.info("*************** Login to Odoo ***************")
