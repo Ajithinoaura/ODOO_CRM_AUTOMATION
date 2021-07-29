@@ -243,7 +243,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>Report_Sanity_Testing.html</h1>
-    <p>Report generated on 29-Jul-2021 at 12:19:07 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 29-Jul-2021 at 17:41:42 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -268,8 +268,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Tester</td>
         <td>Ajith Kumar</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 58.89 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>3 tests ran in 107.91 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -283,14 +283,39 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_AddCustomer.py::Test_005_login::test_addCustomer</td>
-          <td class="col-duration">58.47</td>
+          <td class="col-name">test_login.py::Test_001_login::test_login</td>
+          <td class="col-duration">27.05</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>launching Chrome Browser
-<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     sgd_svrg:test_AddCustomer.py:23 *************** Login to Odoo ***************
-INFO     sgd_svrg:test_AddCustomer.py:30 *************** Navigation to CRM Page ***************
-INFO     sgd_svrg:test_AddCustomer.py:35 *************** Navigate Customer page ***************
-INFO     sgd_svrg:test_AddCustomer.py:65 *************** Customer Added Successfully ***************
-INFO     sgd_svrg:test_AddCustomer.py:66 *************** Test Completed ***************<br/></div></td></tr></tbody></table></body></html>
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     sgd_svrg:test_login.py:23 *************** Test_001_login ***************
+INFO     sgd_svrg:test_login.py:24 *************** Verifying Login Test ***************
+INFO     sgd_svrg:test_login.py:34 *************** Login Test Passed ***************<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_login.py::Test_001_login::test_CRMPageNavigation</td>
+          <td class="col-duration">38.91</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>launching Chrome Browser
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     sgd_svrg:test_login.py:39 *************** Verifying Odoo Main Page ***************
+INFO     sgd_svrg:test_login.py:47 *************** Navigation to CRM Page ***************
+INFO     sgd_svrg:test_login.py:56 *************** CRM Main Page Verification Passed ***************<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_newAccount.py::Test_003_NewAccountCreation::test_login_DDT</td>
+          <td class="col-duration">38.33</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>launching Chrome Browser
+<br/> ------------------------------Captured stdout call------------------------------ <br/>No of rows in excel 6
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     sgd_svrg:test_newAccount.py:22 *************** Verifying Login DDT Test ***************
+INFO     sgd_svrg:test_newAccount.py:47 *****Passed *******
+INFO     sgd_svrg:test_newAccount.py:53 ****** New Account Creation  *******
+INFO     sgd_svrg:test_newAccount.py:63 ****** New Account has been Created *******
+INFO     sgd_svrg:test_newAccount.py:70 ****** Test completed *******<br/></div></td></tr></tbody></table></body></html>
